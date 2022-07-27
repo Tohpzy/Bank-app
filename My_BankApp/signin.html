@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign_in</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="/css/signin.css">
+</head>
+
+<body>
+    <div class="reloader"><img src="./gif/reload.gif" alt=""></div>
+    <!-- login section -->
+    <form action="" id="log">
+        <h4>Login Page</h4>
+        <!-- username section  -->
+        <label for="usern">Username</label>
+
+        <input type="text" name="username" id="username" placeholder="Topzy_jay" autocomplete="off" required>
+
+        <!-- password section  -->
+        <label for="pass">Password</label>
+        <input type="text" name="password" id="password" placeholder="*********" autocomplete="off" required>
+
+        <!-- login btn -->
+        <button type="login" onclick="saveData()" class="submit-btn"> <a href="#"> Log-in </a></button>
+
+        <!-- donot section -->
+        <div>
+            <p class="question">Don't have an account?<span><a href="./signup.html"> Register</a></span> </p>
+        </div>
+    </form>
+
+
+    <!-- js link -->
+    <script src="./js/signin.js"></script>
+
+</body>
+
+</html>

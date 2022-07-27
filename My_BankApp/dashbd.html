@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_Dashboard</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/dashbd.css">
+
+</head>
+
+<body>
+    <!-- dashboard section -->
+    <div class="dashboard">
+
+        <h4>Welcome To Your Dashboard</h4>
+        <div class="userlogindetails">
+
+
+        </div>
+        <div class="current-bal">
+            <h6>Current Balance:</h6>
+            <h1 class="current-amount"></h1>
+            <p class="time"></p>
+        </div>
+        <div class="dashbrd-left">
+            <div class="dpt-transact">
+                <!-- this is where all deposit transact we reflect -->
+                <p class="acctnum">Acct. Number:</p>
+            </div>
+            <div class="wdr-transact">
+                <!-- this is where all deposit transact we reflect -->
+                <p class="loginname">login name</p>
+            </div>
+        </div>
+        <div class="dashbrd-right">
+            <div class="transfer">
+                <h5>Transfer money</h5>
+                <input type="tfr-text" name="transfer" id="receiver-transfer-username" placeholder="Transfer to">
+                <input type="tfr-text" name="Amount" id="transfer-amount" placeholder="Amount">
+                <button type="tfr-btn" class="transferbtn" onclick="checkIfTransferAccExist()">OK</button>
+            </div>
+            <div class="Deposit money">
+                <h5>Deposit</h5>
+                <input type="tfr-text" name="Deposit" id="Deposit" placeholder="Amount">
+
+                <button type="tfr-btn" class="depositbtn">OK</button>
+            </div>
+            <div class="withdraw money">
+                <h5>withdraw</h5>
+                <input type="tfr-text" name="withdraw" id="withdraw" placeholder="Amount">
+
+                <button type="tfr-btn" class="withdrawbtn">OK</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- js link -->
+    <script src="./js/dashbd.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    outline: none;
+    border: none;
+    /* text-transform: capitalize; */
+    transition: all 0.2s linear;
+    text-decoration: none;
+}
+
+/* dashboard style start here */
+.dashboard {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column;
+    background-color: rgb(235, 235, 235);
+
+}
+
+h4 {
+    color: rgb(13, 60, 106);
+}
+
+.dashboard .current-bal {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    gap: 30px;
+    color: rgb(13, 60, 106);
+}
+
+.dashboard .transfer {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dashboard h6 {
+    font-size: 12px;
+    color: rgb(13, 60, 106);
+}
+
+.dashboard h5 {
+    font-size: 10px;
+    font-weight: lighter;
+
+    color: white;
+}
+
+.dashboard .dashbrd-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    height: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 10px;
+    color: rgb(13, 60, 106);
+}
+
+.dashboard .dashbrd-right {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(13, 60, 106);
+    padding: 30px;
+    /* width: 70%; */
+    height: 70%;
+
+}
+
+.dashboard .dashbrd-right input[ type="tfr-text"] {
+    /* display: flex; */
+    flex-direction: row;
+    border: 1px solid gray;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.dashboard .dashbrd-right button[type="tfr-btn"] {
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.dashboard .dashbrd-right button[type="tfr-btn"]:hover {
+    background-color: gray;
+    box-shadow: 15px 15px 80px rgb(11, 5, 21);
+    cursor: pointer;
+}
+
+@media (max-width:600px) {
+    .dashboard {
+        width: 100%;
+        height: 95vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        flex-direction: column;
+        background-color: rgb(235, 235, 235);
+
+    }
+
+    .dashboard .dashbrd-right {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(13, 60, 106);
+        padding: 20px;
+        width: 80%;
+    }
+}

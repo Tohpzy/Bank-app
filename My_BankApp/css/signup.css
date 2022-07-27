@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    outline: none;
+    border: none;
+    /* text-transform: capitalize; */
+    transition: all 0.2s linear;
+    text-decoration: none;
+}
+
+/* sign-up styling start here */
+#openAcct_sectn {
+    /* width: 90%; */
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 4px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 15px 15px 50px rgb(63, 105, 198);
+    background-color: rgb(219, 213, 213);
+
+}
+
+#openAcct_sectn h3 {
+    font-size: 35px;
+    color: rgb(63, 105, 198);
+}
+
+#openAcct_sectn h3 p.openAcct_content {
+    color: gray;
+}
+
+.textField {
+    margin-top: 20px;
+}
+
+
+.textField input[type="email"] {
+    display: block;
+    padding: 5px 50px;
+    border-bottom: 1px solid rgb(63, 105, 198);
+    background: rgb(245, 250, 255);
+    margin-bottom: 10px;
+}
+
+.textField input[type="username"] {
+    display: block;
+    padding: 5px 50px;
+    border-bottom: 1px solid rgb(63, 105, 198);
+    background: rgb(245, 250, 255);
+    margin-bottom: 10px;
+}
+
+.textField input[type="password"] {
+    display: block;
+    padding: 5px 50px;
+    border-bottom: 1px solid rgb(63, 105, 198);
+    background: rgb(245, 250, 255);
+    margin-bottom: 10px;
+}
+
+.textField input[type="text"] {
+    display: block;
+    padding: 5px 50px;
+    border-bottom: 1px solid rgb(63, 105, 198);
+    background: rgb(245, 250, 255);
+    margin-bottom: 10px;
+}
+
+.btn {
+    margin: 0 auto;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-btn {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 100px;
+    background: rgb(63, 105, 198);
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.submit-btn:hover {
+    background-color: blue;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+}
+
+
+/* form  validation starts here */
+.textField span {
+    position: relative;
+    left: 205px;
+    bottom: 40px;
+    font-size: 7px;
+    /* color: red; */
+}
+
+.textField span#firstn-error {
+    color: red;
+}
+
+.textField span#firstn-error i {
+    color: seagreen;
+}
+
+.question {
+    font-size: 9px;
+    margin-bottom: 10px;
+}
+
+.question span a {
+    color: blue;
+
+}
+
+.reloader {
+    z-index: 2;
+    display: none;
+}
+
+.reloader img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+}

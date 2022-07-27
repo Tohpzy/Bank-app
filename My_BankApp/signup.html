@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/signup.css">
+</head>
+
+<body>
+    <!-- reloader path -->
+    <div class="reloader"><img src="./gif/reload.gif" alt=""></div>
+
+    <!-- signup section -->
+    <div id="openAcct_sectn">
+        <h3>Let's Get Started!</h3>
+        <p class="openAcct_content"></p>
+
+        <div class="textField">
+            <div class="firstN">
+                <label for="firstname">First Name</label>
+                <input type="text" placeholder="Jone" id="firstname">
+                <span id="firstn-error"></span>
+            </div>
+            <div class="lastName">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" placeholder="Biden">
+                <span id="lastn-error"></span>
+            </div>
+
+            <!-- email section  -->
+            <div class="mail">
+                <label for="mail">Enter Your Email</label>
+
+                <input type="email" name="mail" id="mail" placeholder="ed@gmail.com">
+                <span id="email-error"></span>
+            </div>
+
+            <!-- username section  -->
+            <div class="username">
+                <label for="username">Username</label>
+
+                <input type="username" id="username" placeholder="Topzy_jay">
+                <span id="username-error"></span>
+            </div>
+
+            <!-- password section  -->
+            <div class="passw">
+                <label for="password">Password</label>
+
+                <input type="password" id="password" placeholder="*********">
+                <span id="password-error"></span>
+            </div>
+        </div>
+
+        <div class="btn">
+            <button type="button" class="submit-btn">Submit Now</button>
+            <span id="submit-error"> </span>
+
+        </div>
+        <!-- donot section -->
+        <div>
+            <p class="question">Don't have an account?<span><a href="./signin.html"> Login</a></span> </p>
+        </div>
+
+    </div>
+    <!-- js link -->
+    <script src="./js/signup.js"></script>
+</body>
+
+</html>
